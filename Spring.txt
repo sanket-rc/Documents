@@ -1,0 +1,73 @@
+Spring-Container of beans ..all objects are managed ie: it handles instantiation, lifecycle and destruction by spring.
+
+ORM is just a concept.. it is implemented using hibernet which is a tools to map object into tables or topLink which is an oracle tools.
+***stateless beans: beans that are singleton and are initialized only once. The only state they have is a shared state. These beans are created while the ApplicationContext is being 
+	initialized. The SAME bean instance will be returned/injected during the lifetime of this ApplicationContext.
+***stateful beans: beans that can carry state (instance variables). These are created EVERY time an object is required (like using the "new" operator in java).
+ApplicationContextAware-makes a bean aware to the container..
+By default,a bean is eagerly initialised in spring.
+shutting down IoC container in non-web applications--registerShutdownHook()
+InitializingBean and disposableabean is used to customise the nature of bean.
+
+The dialect specifies the type of database used in hibernate so that hibernate generate appropriate type of SQL statements. For connecting any hibernate application with the 
+database, it is required to provide the configuration of SQL dialect.
+	1)Dialect class is java class, which contains code to map between java language data type database data type.
+	2)All Dialect classes extend the Dialect abstract class.
+	3)Dialect is used to convert HQL statements to data base specific statements.
+Dialect is the language used by the database for communication. It varies from database to database. For instance, the syntax of the queries for MySQL differs from Oracle. 
+Hibernate needs to know the language in which it need to generate or translate the HQL to the corresponding native query for execution.
+
+Cardinality::
+In the context of databases, cardinality refers to the uniqueness of data values contained in a column. High cardinality means that the column contains a large percentage of 
+totally unique values. Low cardinality means that the column contains a lot of “repeats” in its data range.
+It is not common, but cardinality also sometimes refers to the relationships between tables. Cardinality between tables can be one-to-one, many-to-one or many-to-many.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
